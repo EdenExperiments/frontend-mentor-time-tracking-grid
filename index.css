@@ -29,6 +29,11 @@ main {
     flex-grow: 1;
     text-decoration: none;
     color: #7078C9;
+    cursor: pointer;
+}
+
+.userCard ul li:hover, .userCard ul li:focus {
+    text-decoration: underline;
 }
 
 .userCard ul li.toggle-active {
@@ -171,6 +176,7 @@ main {
     font-size: 0.85rem;
     padding-top: 0;
     font-weight: 300;
+    color: #BBC0FF;
 }
 
 button {
@@ -178,7 +184,10 @@ button {
     background-color: transparent;
     color: #fff;
     font-size: 2rem;
+    cursor: pointer;
+    height: 10px;
 }
+
 
 @media (min-width: 1440px) {
     main {
