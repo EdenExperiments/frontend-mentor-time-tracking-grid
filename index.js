@@ -15,7 +15,7 @@ const selfcareHrs = document.getElementById('selfcare-hours')
 const prevSelfcareHrs = document.getElementById('previous-selfcare-hours')
 const exerciseHrs = document.getElementById('exercise-hours')
 const prevExerciseHrs = document.getElementById('previous-exercise-hours')
-
+const timePeriodText = document.querySelectorAll('.timeperiod')
 
 // Code works, needs severe refactoring before publishing
 const boxArr = [[workHrs, prevWorkHrs], [playHrs, prevPlayHrs], [studyHrs, prevStudyHrs],
@@ -31,6 +31,8 @@ function toggleFunction(toggleType) {
         boxArr[i][0].innerText = data[i].timeframes[toggleType].current;
         boxArr[i][1].innerText = data[i].timeframes[toggleType].previous;
     }
+
+    timePeriodText.forEach( (timeSpan) => timeSpan.textContent = toggleType )
 }
 
 daily.addEventListener('click', () => {
