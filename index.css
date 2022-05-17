@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+html {
+    min-height: 100vh;
+    width: 100%;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    color: #ffffff;
+    min-height: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1.2fr repeat(7, 1fr);
+    gap: 30px;
+}
+.userCard ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;   
+    text-align: center;
+}
+
+.userCard ul li {
+    flex-grow: 1;
+    text-decoration: none;
+    color: #7078C9;
+}
+
+.userCard ul li.toggle-active {
+    color: #fff;
+}
+
+.userCard {
+    grid-row: 2 / span 1;
+    background-color: #1C204B
+    ;
+}
+
+.workCard {
+    grid-row: 3 / span 1;
+    background-color: #FF8B64;
+}
+
+.playCard {
+    grid-row: 4 / span 1;
+    background-color: #55C2E6;
+}
+
+.studyCard {
+    grid-row: 5 / span 1;
+    background-color: #FF5E7D;
+}
+
+.exerciseCard {
+    grid-row: 6 / span 1;
+    background-color: #4BCF82;
+}
+
+.socialCard {
+    grid-row: 7 / span 1;
+    background-color: #7335D2;
+}
+
+.selfcareCard {
+    grid-row: 8 / span 1;
+    background-color: #F1C75B;
+}
+
+.card {
+    width: 90%;
+    max-width: 320px;
+    min-height: 160px;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    border-radius: 15px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.userCard {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card img {
+    display: block;
+    margin-left: auto;
+}
+
+.userName {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 34px 32px;
+    background-color: #5747EA;
+    border-radius: 15px;
+}
+
+.userName img {
+    height: 64px;
+    width: auto;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.username-text {
+    height: 100%;
+}
+
+.username-text p:first-child {
+    color: #BBC0FF;
+    font-weight: 300;
+    margin: 0;
+}
+
+.username-text p:nth-child(2) {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.details {
+    position: absolute;
+    min-width: 100%;
+    top: 45px;
+    left: 0;
+    background-color: #1C204B;
+    border-radius: 15px;
+
+}
+
+.userCard .details {
+    top: 142px;
+    min-height: calc(100% - 133px);
+    font-weight: 300;
+}
+
+.details-container1, .details-container2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.details-container1 > h2 {
+    font-weight: 400;
+}
+
+.details-container2 {
+    align-items: flex-start;
+}
+
+.details-container2 > p:first-child {
+    font-size: 2rem;
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+.details-container2 > p:nth-child(2) {
+    font-size: 0.85rem;
+    padding-top: 0;
+    font-weight: 300;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 2rem;
+}
+
+@media (min-width: 1440px) {
+    main {
+        grid-template-columns: 1fr repeat(4, 2fr) 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .userCard {
+        grid-column: 2 / span 1;
+        grid-row: 2 /  span 2;
+    }
+
+    .workCard {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .playCard {
+        grid-column: 4 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .studyCard {
+        grid-column: 5 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .exerciseCard {
+        grid-column: 3 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .socialCard {
+        grid-column: 4 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .selfcareCard {
+        grid-column: 5 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .card {
+        width: 100%;
+        height: 210px;
+    }
+
+    .userName {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .username-text {
+        margin-top: 20px;
+    }
+
+    .userCard {
+        height: 100%;
+    }
+
+    .userCard .details {
+        top: 242px;
+        font-weight: 300;
+        min-height: 0;
+    }
+
+    .userCard ul {
+        padding-left: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 150px;
+        margin: 0;
+    }
+
+    .details:hover, .details:focus, .details:active {
+        background-color: #33397A;
+    }
+
+    .userCard .details:hover, .userName .details:focus, .userName .details:active {
+        background-color: #1C204B;
+    }
+
+    .details-container2 {
+        flex-direction: column;
+    }
+
+    .details-container2 > p:first-child {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 3rem;
+    }
+
+    #daily-toggle {
+        margin-top: 10px;
+    }
+}

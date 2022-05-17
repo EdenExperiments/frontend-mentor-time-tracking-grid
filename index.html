@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="index.css" />    
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="userCard card">
+        <div class="userName">
+          <picture>
+            <img src="images/image-jeremy.png" alt="Jeremy">
+          </picture>
+          <div class="username-text">
+            <p>Report for</p>
+            <p>Jeremy Robson</p>
+          </div>
+        </div>
+        <div class="details detailsProfile">
+          <ul>
+            <li id="daily-toggle">Daily</li>
+            <li id="weekly-toggle">Weekly</li>
+            <li id="monthly-toggle">Monthly</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="workCard card">
+        <picture>
+          <img src="images/icon-work.svg" >
+        </picture>
+        <div class="details">
+          <div class="details-container1">
+            <h2>Work</h2>
+            <button>...</button>
+          </div>
+          <div class="details-container2">
+            <p><span id="work-hours"></span>hrs</p>
+            <p>Last week - <span id="previous-work-hours"></span>hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="playCard card">
+        <picture>
+          <img src="images/icon-play.svg" >
+        </picture>
+        <div class="details">
+          <div class="details-container1">
+            <h2>Play</h2>
+            <button>...</button>
+          </div>
+          <div class="details-container2">
+            <p><span id="play-hours"></span>hrs</p>
+            <p>Last week - <span id="previous-play-hours"></span>hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="studyCard card">
+        <picture>
+          <img src="images/icon-study.svg" >
+        </picture>
+        <div class="details">
+          <div class="details-container1">
+            <h2>Study</h2>
+            <button>...</button>
+          </div>
+          <div class="details-container2">
+            <p><span id="study-hours"></span>hrs</p>
+            <p>Last week - <span id="previous-study-hours"></span>hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="exerciseCard card">
+        <picture>
+          <img src="images/icon-exercise.svg" >
+        </picture>
+        <div class="details">
+          <div class="details-container1">
+            <h2>Exercise</h2>
+            <button>...</button>
+          </div>
+          <div class="details-container2">
+            <p><span id="exercise-hours"></span>hrs</p>
+            <p>Last week - <span id="previous-exercise-hours"></span>hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="socialCard card">
+        <picture>
+          <img src="images/icon-social.svg" >
+        </picture>
+        <div class="details">
+          <div class="details-container1">
+            <h2>Social</h2>
+            <button>...</button>
+          </div>
+          <div class="details-container2">
+            <p><span id="social-hours"></span>hrs</p>
+            <p>Last week - <span id="previous-social-hours"></span>hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="selfcareCard card">
+        <picture>
+          <img src="images/icon-self-care.svg" >
+        </picture>
+        <div class="details">
+          <div class="details-container1">
+            <h2>Self Care</h2>
+            <button>...</button>
+          </div>
+          <div class="details-container2">
+            <p><span id="selfcare-hours"></span>hrs</p>
+            <p>Last week - <span id="previous-selfcare-hours"></span>hrs</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.linkedin.com/in/macaulay-eden-5b5b3a127/">Macaulay Eden</a>.
+      </div>
+    </footer>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
