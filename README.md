@@ -19,7 +19,7 @@ Your users should be able to:
 
 ## Live Solution
 
-[Github Pages Live Site]([https://link-url-here.org](https://edenexperiments.github.io/frontend-mentor-time-tracking-grid/))
+[Github Pages Live Site](https://edenexperiments.github.io/frontend-mentor-time-tracking-grid/)
 
 ## Review
 
