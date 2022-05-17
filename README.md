@@ -25,6 +25,6 @@ Your users should be able to:
 
 I managed to take away a lot on how CSS grid works on this project, alongside it is my first time working with JSON on a project and also local storage (I added in that it saves your most recent toggle selection in local storage and runs it on page load). It was difficult to first get to grips with the layout, and my CSS could be improved. 
 
-I would add in an in-between design of two columns (even though the figma only provides the two designs seen in the product), and also I could improve the userName card in terms of appearance. However, I am proud of completing this project and looking forward to doing a calculator next to improve my CSS grid alongside some additional functionality. 
+I would add in an in-between design of two columns (even though the figma only provides the two designs seen in the product), and also I could improve the userName card in terms of appearance. The biggest mistake is accessibility, but I have learned that buttons/a tags are essentially and will be taken on in future. I am proud of completing this project in total and I am looking forward to doing a calculator next to improve my CSS grid alongside some additional functionality. 
 
 
