@@ -19,24 +19,25 @@ main {
 }
 .userCard ul {
     display: flex;
+    justify-content: space-around;
     list-style: none;
     padding: 0;
     font-size: 1.2rem;   
     text-align: center;
 }
 
-.userCard ul li {
+.userCard ul li a {
     flex-grow: 1;
     text-decoration: none;
     color: #7078C9;
     cursor: pointer;
 }
 
-.userCard ul li:hover, .userCard ul li:focus {
+.userCard ul li a:hover, .userCard ul li a:focus {
     text-decoration: underline;
 }
 
-.userCard ul li.toggle-active {
+.userCard ul li a.toggle-active {
     color: #fff;
 }
 
